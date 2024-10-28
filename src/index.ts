@@ -45,3 +45,28 @@ enum Direction2 {
   Right = 'Right'
 }
 console.log(Direction2.Up);
+
+// Objects
+const user: {
+  id: number;
+  name: string;
+} = {
+  id: 1,
+  name: 'John'
+}; // quite messy
+
+// Type Alias
+type User = {
+  id: number;
+  name: string;
+};
+
+const userKing: User = {
+  id: 1,
+  name: 'King'
+};
+
+// Type Assertion
+let cid: any = 1;
+// let customerID = <number>cid
+let customerID = cid as number;
