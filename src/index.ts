@@ -133,3 +133,22 @@ class Employee extends Person {
 }
 
 const emp = new Employee(3, 'Shawn', 'Developer');
+
+// Generics
+function getArray1(items: any[]): any[] {
+  return new Array().concat(items);
+}
+
+let numArray = getArray1([1, 2, 3, 4, 5]);
+let strArray = getArray1(['a', 'b', 'c', 'd']);
+
+numArray.push('123'); // O, 타입이 any로 되어 있으므로 가능
+
+function getArray2<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+let numArray1 = getArray2<number>([1, 2, 3, 4, 5]);
+let strArray2 = getArray2<string>(['a', 'b', 'c', 'd']);
+
+// numArray1.push('123'); // X, 안됨

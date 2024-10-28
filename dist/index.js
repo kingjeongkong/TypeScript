@@ -70,4 +70,15 @@ class Employee extends Person {
     }
 }
 const emp = new Employee(3, 'Shawn', 'Developer');
+function getArray1(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray1([1, 2, 3, 4, 5]);
+let strArray = getArray1(['a', 'b', 'c', 'd']);
+numArray.push('123');
+function getArray2(items) {
+    return new Array().concat(items);
+}
+let numArray1 = getArray2([1, 2, 3, 4, 5]);
+let strArray2 = getArray2(['a', 'b', 'c', 'd']);
 //# sourceMappingURL=index.js.map
