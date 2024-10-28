@@ -44,7 +44,6 @@ enum Direction2 {
   Left = 'Left',
   Right = 'Right'
 }
-console.log(Direction2.Up);
 
 // Objects
 const user: {
@@ -70,3 +69,12 @@ const userKing: User = {
 let cid: any = 1;
 // let customerID = <number>cid
 let customerID = cid as number;
+
+// Functions
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+
+function log(message: string | number): void {
+  console.log(message);
+}

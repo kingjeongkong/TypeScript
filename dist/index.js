@@ -30,7 +30,6 @@ var Direction2;
     Direction2["Left"] = "Left";
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
-console.log(Direction2.Up);
 const user = {
     id: 1,
     name: 'John'
@@ -41,4 +40,10 @@ const userKing = {
 };
 let cid = 1;
 let customerID = cid;
+function addNum(x, y) {
+    return x + y;
+}
+function log(message) {
+    console.log(message);
+}
 //# sourceMappingURL=index.js.map
